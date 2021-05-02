@@ -32,7 +32,7 @@ public:
 
 
 // Threats
-     void HandelThreatsAction(SDL_Renderer* screen );
+     void HandelThreatsAction(SDL_Renderer* screen  );
      void set_threats_list(std::vector<ThreatsObject*> threats_list)
     {
         p_threats_list_ = threats_list;

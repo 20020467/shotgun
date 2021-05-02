@@ -227,7 +227,7 @@ int main(int argc, char* argv[])
 				g_background.RenderScroll(g_screen, NULL, 0, scrollingOffset + SCREEN_HEIGHT );
 				g_background.RenderScroll(g_screen, NULL, 0, scrollingOffset + SCREEN_HEIGHT + SCREEN_HEIGHT);
 
-				p_player.HandelThreatsAction(g_screen);
+				p_player.HandelThreatsAction(g_screen );
 
 				p_player.HandleBullet(g_screen);
 				p_player.HandleThreats(g_screen);

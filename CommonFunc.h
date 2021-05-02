@@ -24,7 +24,7 @@ static int quaivat_rand;
 static int x_rand = 0;
 static int num_threats_over = 0;
 static int mark_value = 0;
-static int speed_threat = 1;
+static int speed_threat = 3;
 
 const int COLOR_KEY_R = 255;
 const int COLOR_KEY_G = 255;

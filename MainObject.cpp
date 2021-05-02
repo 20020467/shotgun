@@ -60,7 +60,7 @@ void MainObject::HandelInputAction(SDL_Event events, SDL_Renderer* screen , Mix_
 
 }
 
-void MainObject::HandelThreatsAction(SDL_Renderer* screen )
+void MainObject::HandelThreatsAction(SDL_Renderer* screen)
 {
     if ((SDL_GetTicks()%90) == 0)
     {
@@ -98,8 +98,11 @@ void MainObject::HandelThreatsAction(SDL_Renderer* screen )
             x_rand = y;
         }
         p_threats->SetRect(x_rand, -80);
-
-        p_threats->set_y_val_threats(3);
+        if( (mark_value % 20) == 0 && mark_value > 0)
+        {
+            speed_threat++;
+        }
+        p_threats->set_y_val_threats(speed_threat);
         p_threats->set_is_move_threats(true);
 
         p_threats_list_.push_back(p_threats);

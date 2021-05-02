@@ -18,7 +18,7 @@ void ThreatsObject::HandleMoveThreats(const int& x_border, const int& y_border)
     if (rect_.y > SCREEN_HEIGHT)
     {
         is_move_threats = false;
-
+        rect_.y = -80;
     }
 }
 
