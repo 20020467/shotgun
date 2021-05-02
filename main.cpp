@@ -242,10 +242,10 @@ int main(int argc, char* argv[])
                     {
                         SDL_Rect tRect;
                         tRect.y = obj_threats->GetRect().y;
-                        if (tRect.y > SCREEN_HEIGHT)
+                        if (tRect.y >= SCREEN_HEIGHT)
                         {
                             num_threats_over++;
-							if (num_threats_over == 2)
+							if (num_threats_over == 10)
                             {
                             	bool quit_game = false;
                             	while(!quit_game)
@@ -268,7 +268,7 @@ int main(int argc, char* argv[])
 												quit_game = true;
 											}
 
-								}
+										}
 								}
 
 
