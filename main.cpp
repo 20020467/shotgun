@@ -227,7 +227,7 @@ int main(int argc, char* argv[])
 				g_background.RenderScroll(g_screen, NULL, 0, scrollingOffset + SCREEN_HEIGHT );
 				g_background.RenderScroll(g_screen, NULL, 0, scrollingOffset + SCREEN_HEIGHT + SCREEN_HEIGHT);
 
-				p_player.HandelThreatsAction(g_screen );
+				p_player.HandelThreatsAction(g_screen , mark_value );
 
 				p_player.HandleBullet(g_screen);
 				p_player.HandleThreats(g_screen);
@@ -245,7 +245,7 @@ int main(int argc, char* argv[])
                         if (tRect.y >= SCREEN_HEIGHT)
                         {
                             num_threats_over++;
-							if (num_threats_over == 10)
+							if (num_threats_over == 2)
                             {
                             	bool quit_game = false;
                             	while(!quit_game)
